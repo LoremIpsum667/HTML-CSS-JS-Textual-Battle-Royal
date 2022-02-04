@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Charlie;
+  src: url(/assets/font/Charlie.ttf);
+}
+* {
+  font-family: Charlie;
+  text-align: center;
+}
+body {
+  background: url(/assets/img/map.png);
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+  font-size: 60px;
+}
+p {
+  text-align: center;
+  color: aliceblue;
+  margin-top: 3rem;
+  font-size: 20px;
+}
+.select {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#games_info {
+  text-align: center;
+  margin-top: 3rem;
+  color: aliceblue;
+  font-size: 25px;
+}
+#generate-game, #start_game{
+  color: black;
+}
+
+input{
+  color: black;
+}
+#players_zone{
+  color: whitesmoke;
+  margin-top: 3rem;
+}
+img{
+  width: 400px;
+  height: 400px;
+}
+
+.enter{
+  height: 50px;
+  width: 300px;
+  border-radius:20px;
+}
+.btn{
+  font-size: 17px;
+  border-radius:20px;
+}
+b, span{
+  background-color:black;
+  opacity: 0.8;
+  font-size:25px;
+}
+footer {
+  position: fixed;
+  padding: 0 0 0 0;
+  width: 100%;
+  background-color: grey;
+  opacity: 0.9;
+  bottom: 0;
+}
+footer p {
+  color: black;
+}

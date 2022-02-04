@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" type="image/ico" href="/assets/img/ico.ico"/>
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css" media="all" />
+<html>
+
+<head>
+    <title>Battle League</title>
+</head>
+
+<body>
+    <header>
+        <h1>Battle League</h1>
+        <p>Please enter the number of players:</p>
+    </header>
+    <div class="select">
+        <input class="enter" type="number" id="choiche_players">
+        <button class="btn" id="start_game" onclick="launcher()">Set Random Players</button>
+        <button class="btn" id="generate-game" onclick="generate()">Start the Game</button>
+        <button class="btn" onClick="window.location.reload();">Reset Game</button>
+    </div>
+    <div id="players_zone"></div>
+    <div id="games_info">
+    </div>
+    <template id="player_container">
+        <div style="display: inline-block;">
+            <table>
+                <tr>
+                    <td>
+                        <b> Name: </b><span id="player_name"></span>
+                    </td>
+                    <td>
+                        <b> HP: </b><span id="player_hp"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b> Weapon Name: </b><span id="player_weapon"></span>
+                    </td>
+                    <td>
+                        <b> Player Defense: </b><span id="player_defense"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <b> Weapong DMG: </b><span id="player_weapon_stats"></span>
+                </tr>
+                <tr>
+                    <b> Streght: </b><span id="player_streght"></span>
+                </tr>
+                <tr>
+                    <td colspan="2" width="100px">
+                        <img src="" alt="" id="player_img">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </template>
+</body>
+<script type="text/javascript" src="/assets/js/utils.js"></script>
+<script type="text/javascript" src="/assets/js/class.js"></script>
+<script type="text/javascript" src="/assets/js/scenario.js"></script>
+<footer>
+    <p>The characters used are absolutely not for profit.<br><br>
+        All Rights Reserved to Riot Games.</p>
+</footer>
+</html>
